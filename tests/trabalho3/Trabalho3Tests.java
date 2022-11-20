@@ -172,4 +172,41 @@ public class Trabalho3Tests {
 
         assertEquals(84, trab.executarKruskal());
     }
+
+    @Test
+    public void deveExecutar_AlgoritmoKruskal6() {
+        // Entrada
+        // 8 12
+        // 4 6 1
+        // 2 8 1
+        // 7 8 2
+        // 1 3 3
+        // 1 8 4
+        // 1 2 5
+        // 4 5 6
+        // 6 5 7
+        // 5 8 8
+        // 1 7 9
+        // 5 7 9
+        // 1 6 11
+        //
+        // Saída
+        // 25
+
+        Trabalho3 trab = new Trabalho3(8, 12);
+        trab.adicionarAresta(4, 6, 1);
+        trab.adicionarAresta(2, 8, 1);
+        trab.adicionarAresta(7, 8, 2);
+        trab.adicionarAresta(1, 3, 3);
+        trab.adicionarAresta(1, 8, 4);
+        trab.adicionarAresta(1, 2, 5);
+        trab.adicionarAresta(4, 5, 6);
+        trab.adicionarAresta(6, 5, 7);
+        trab.adicionarAresta(5, 8, 8);
+        trab.adicionarAresta(1, 7, 9);
+        trab.adicionarAresta(5, 7, 9);
+        trab.adicionarAresta(1, 6, 11);
+
+        assertEquals(25, trab.executarKruskal());
+    }
 }
